@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_5.MainPage">
+
+    <ScrollView BackgroundColor="MistyRose">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+               Source="recsvg.png" 
+                HeightRequest="120"
+                HorizontalOptions="Center" />
+
+            <Label Text="Ejercicio 5" TextColor="LightSeaGreen" FontAttributes="Italic" FontSize="Subtitle" HorizontalOptions="Center"/>
+            <Label Text="Digite la altura del rectangulo" FontAttributes="Bold" TextColor="HotPink"/>
+            <Entry x:Name="h" Placeholder="Altura del rectangulo" TextColor="Black"/>
+
+            <Label Text="Digite la base del rectanglo" FontAttributes="Bold" TextColor="HotPink"/>
+            <Entry x:Name="b" Placeholder="Base del rectangulo" TextColor="Black"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Ver Resultado"
+                TextColor="Black"
+                BackgroundColor="Aquamarine"
+                BorderColor="DarkBlue"
+                BorderWidth="1"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" />
+
+            <Label Text="Perimetro del rectangulo" FontAttributes="Bold" TextColor="Violet"/>
+            <Entry x:Name="Perimetro" Placeholder="0" IsEnabled="False"/>
+
+            <Label Text="Superficie del rectanglo" FontAttributes="Bold" TextColor="Violet"/>
+            <Entry x:Name="Superficie" Placeholder="0" IsEnabled="False"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
